@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW1</title>
+</head>
+<body>
+<script>
+
+// Task 1 (fizBuz)
+
+// for(let i = 1; i <= 10; i++){
+//     if(i % 3 === 0){
+//         console.log('fizBuz')
+//     } else if(i % 2 === 0){
+//         console.log('fiz')
+//     } else if (i % 2 !== 0){
+//         console.log('buz')
+//     }
+// }
+
+
+
+// Task 2 (факториал 10)
+
+// let n = 10
+// let res = 1
+//
+// while (n){
+//     res *= n--
+//     console.log(res)
+// }
+
+
+
+// Task 3 (пачки бумаги)
+
+// const sheetsInReamPaper = 500
+// const consumptionPerWeek = 1200
+// const weeksAmount = 8
+//
+//
+// let totalSheets = consumptionPerWeek * weeksAmount  /*общее количество листов бумаги за 8 недель*/
+// let totalReamOfPaper = totalSheets / sheetsInReamPaper /*требуемое количество пачек пачек бумаги*/
+//
+// if(totalReamOfPaper % sheetsInReamPaper !== 0){
+//     console.log(`не равное количество пачек бумаги ${totalReamOfPaper}, нужно округлить в большую сторону`)
+// } else {
+//     console.log(`итого нужно купить ${totalReamOfPaper} пачек бумаги`)
+// }
+//
+
+
+
+// Task 4  номер этажа и номер подъезда
+
+
+// function TotalResult() {
+//
+//     const roomsOnFloor = 3
+//     const floors = 9
+//     const roomNumber = 481
+//
+//
+//     let floor = Math.ceil(roomNumber / roomsOnFloor)
+//
+//     let porch = Math.ceil(floor / floors) /* номер подъезда */
+//
+//     floor -= (porch - 1) * floors  /* на каком этаже квартира */
+//
+//     alert(("Квартира с номером " + roomNumber + " находится на " + floor + " этаже, и в подьезде с номером " + porch))
+//
+// }
+//
+// TotalResult()
+
+
+
+// Task 4 pyramid
+
+
+// function createPyramid(a){
+//
+//     for (let i = 0; i <= a; i++){
+//         let output = '-'
+//         for(let j = 1; j <= (a - i); j++)
+//             output += '-'
+//         for (let k = 1; k <= (2 * i + 1); k++)
+//             output += '#'
+//         for(let j = 0; j <= (a - i); j++)
+//             output += '-'
+//         console.log(output);
+//
+//     }
+// }
+//
+// createPyramid(10);
+//
+//
+
+
+
+</script>
+</body>
+</html>
