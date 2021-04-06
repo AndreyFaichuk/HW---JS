@@ -35,6 +35,7 @@
 
 // Task 3 (пачки бумаги)
 
+
 // const sheetsInReamPaper = 500
 // const consumptionPerWeek = 1200
 // const weeksAmount = 8
@@ -43,37 +44,64 @@
 // let totalSheets = consumptionPerWeek * weeksAmount  /*общее количество листов бумаги за 8 недель*/
 // let totalReamOfPaper = totalSheets / sheetsInReamPaper /*требуемое количество пачек пачек бумаги*/
 //
-// if(totalReamOfPaper % sheetsInReamPaper !== 0){
-//     console.log(`не равное количество пачек бумаги ${totalReamOfPaper}, нужно округлить в большую сторону`)
+//
+//
+// let rounded = totalReamOfPaper - totalReamOfPaper % 1
+//
+// if(totalReamOfPaper !== rounded){
+//     rounded += 1
+//     console.log(`нам нужно купить ${rounded} пачек бумаги`)
 // } else {
-//     console.log(`итого нужно купить ${totalReamOfPaper} пачек бумаги`)
+//     console.log(`нам нужно купить ${rounded} пачек бумаги`)
 // }
 //
-
+//
 
 
 // Task 4  номер этажа и номер подъезда
 
 
-// function TotalResult() {
+// function porchesAndFloors() {
 //
 //     const roomsOnFloor = 3
 //     const floors = 9
-//     const roomNumber = 481
+//     const roomNumber = 456
 //
 //
-//     let floor = Math.ceil(roomNumber / roomsOnFloor)
+//     let floor = roomNumber / roomsOnFloor
+//     let roundedFloor = floor - floor % 1
 //
-//     let porch = Math.ceil(floor / floors) /* номер подъезда */
+//     let porch = roundedFloor / floors /* номер подъезда */
+//     let roundedPorch = porch - porch % 1
 //
-//     floor -= (porch - 1) * floors  /* на каком этаже квартира */
 //
-//     alert(("Квартира с номером " + roomNumber + " находится на " + floor + " этаже, и в подьезде с номером " + porch))
+//     if(floor === roundedFloor && porch !== roundedPorch) {
+//         roundedPorch += 1
+//
+//         roundedFloor -= (roundedPorch - 1) * floors  /* на каком этаже квартира */
+//         alert((`Квартира с номером ${roomNumber} находится на ${roundedFloor} этаже, и в подьезде с номером ${roundedPorch}`))
+//
+//     } else if (floor !== roundedFloor && porch === roundedPorch){
+//         roundedFloor += 1
+//
+//         roundedFloor -= (roundedPorch - 1) * floors  /* на каком этаже квартира */
+//         alert((`Квартира с номером ${roomNumber} находится на ${roundedFloor} этаже, и в подьезде с номером ${roundedPorch}`))
+//
+//     } else if (!(floor === roundedFloor && porch === roundedPorch)) {
+//         roundedPorch += 1
+//         roundedFloor += 1
+//
+//         roundedFloor -= (roundedPorch - 1) * floors  /* на каком этаже квартира */
+//         alert((`Квартира с номером ${roomNumber} находится на ${roundedFloor} этаже, и в подьезде с номером ${roundedPorch}`))
+//
+//     } else {
+//         roundedFloor -= (roundedPorch - 1) * floors  /* на каком этаже квартира */
+//         alert((`Квартира с номером ${roomNumber} находится на ${roundedFloor} этаже, и в подьезде с номером ${roundedPorch}`))
+//     }
 //
 // }
 //
-// TotalResult()
-
+// porchesAndFloors()
 
 
 
@@ -95,7 +123,7 @@
 //     }
 // }
 //
-// createPyramid(10);
+// createPyramid(35);
 //
 //
 
