@@ -65,43 +65,25 @@
 //
 //     const roomsOnFloor = 3
 //     const floors = 9
-//     const roomNumber = 456
+//     const roomNumber = 28
 //
 //
 //     let floor = roomNumber / roomsOnFloor
-//     let roundedFloor = floor - floor % 1
+//     let porch = floor / floors
 //
-//     let porch = roundedFloor / floors /* номер подъезда */
-//     let roundedPorch = porch - porch % 1
+//     let roundFloor = floor - floor % 1
+//     roundFloor === floor ? roundFloor : roundFloor += 1;
 //
+//     let roundPorch = porch - porch % 1
+//     roundPorch === porch ? roundPorch : roundPorch += 1;
 //
-//     if(floor === roundedFloor && porch !== roundedPorch) {
-//         roundedPorch += 1
-//
-//         roundedFloor -= (roundedPorch - 1) * floors  /* на каком этаже квартира */
-//         alert((`Квартира с номером ${roomNumber} находится на ${roundedFloor} этаже, и в подьезде с номером ${roundedPorch}`))
-//
-//     } else if (floor !== roundedFloor && porch === roundedPorch){
-//         roundedFloor += 1
-//
-//         roundedFloor -= (roundedPorch - 1) * floors  /* на каком этаже квартира */
-//         alert((`Квартира с номером ${roomNumber} находится на ${roundedFloor} этаже, и в подьезде с номером ${roundedPorch}`))
-//
-//     } else if (!(floor === roundedFloor && porch === roundedPorch)) {
-//         roundedPorch += 1
-//         roundedFloor += 1
-//
-//         roundedFloor -= (roundedPorch - 1) * floors  /* на каком этаже квартира */
-//         alert((`Квартира с номером ${roomNumber} находится на ${roundedFloor} этаже, и в подьезде с номером ${roundedPorch}`))
-//
-//     } else {
-//         roundedFloor -= (roundedPorch - 1) * floors  /* на каком этаже квартира */
-//         alert((`Квартира с номером ${roomNumber} находится на ${roundedFloor} этаже, и в подьезде с номером ${roundedPorch}`))
-//     }
+//     roundFloor -= (roundPorch - 1) * floors  /* на каком этаже квартира */
+//     alert(`Квартира с номером ${roomNumber} находится на ${roundFloor} этаже, и в подьезде с номером ${roundPorch}`)
 //
 // }
 //
 // porchesAndFloors()
+
 
 
 
@@ -125,7 +107,7 @@
 //
 // createPyramid(35);
 //
-//
+
 
 
 
