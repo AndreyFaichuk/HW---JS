@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW2</title>
+</head>
+<body>
+<script>
+
+// Task 1
+
+   // const citiesAndCountries = {
+   //     'Киев': 'Украина',
+   //     'Нью-Йорк': 'США',
+   //     'Амстердам': 'Нидерланды',
+   //     'Берлин': 'Германия',
+   //     'Париж': 'Франция',
+   //     'Лиссабон': 'Португалия',
+   //     'Вена': 'Австрия',
+   // }
+   //
+   // let result = [],
+   //     j = 0
+   //
+   //  for(let city in citiesAndCountries) {
+   //      result[j] = city + ' - это ' + citiesAndCountries[city]
+   //      j++
+   //  }
+   // console.log(result)
+   //
+
+
+
+
+// Task 2
+
+// function getArray() {
+//     const amount = 9
+//
+//     let mas = []
+//     mas.length = amount / 3
+//     let count = 1
+//
+//     for (let i = 0; i < mas.length; i++) {
+//         mas[i] = []
+//         for (let j = 0; j < 3; j++) {
+//             mas[i][j] = count++
+//         }
+//     }
+//     return mas
+// }
+//
+// console.log(getArray())
+
+
+
+
+
+// Task 3
+
+// const namesOfDays = {
+//     ru: ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'],
+//     en: ['Monday', 'Tuesday', 'Wednesday','Thursday','Friday', 'Saturday', 'Sunday'],
+// }
+//
+//
+// function getNameOfDay(lang, day) {
+//
+//     if(!((lang === 'ru' || lang === 'en')) || (lang === null) || (lang === '')){
+//         console.log('something went wrong, please try again')
+//     } else if (day > 7){
+//         console.log('there are only 7 days in week')
+//     } else {
+//
+//         let result = []
+//
+//         for (days in namesOfDays) {
+//             if (lang === days) {
+//                 for (let i = 1; i < namesOfDays[days].length + 1; i++) {
+//                     result[i] = namesOfDays[days][i - 1]
+//                 }
+//                 if (day === 1) {
+//                     console.log(result[1])
+//                 } else if (day === 2) {
+//                     console.log(result[2])
+//                 } else if (day === 3) {
+//                     console.log(result[3])
+//                 } else if (day === 4) {
+//                     console.log(result[4])
+//                 } else if (day === 5) {
+//                     console.log(result[5])
+//                 } else if (day === 6) {
+//                     console.log(result[6])
+//                 } else if (day === 7) {
+//                     console.log(result[7])
+//                 }
+//             } else if (lang === days) {
+//                 for (let i = 1; i < namesOfDays[days].length + 1; i++) {
+//                     result[i] = namesOfDays[days][i - 1]
+//                 }
+//                 if (day === 1) {
+//                     console.log(result[1])
+//                 } else if (day === 2) {
+//                     console.log(result[2])
+//                 } else if (day === 3) {
+//                     console.log(result[3])
+//                 } else if (day === 4) {
+//                     console.log(result[4])
+//                 } else if (day === 5) {
+//                     console.log(result[5])
+//                 } else if (day === 6) {
+//                     console.log(result[6])
+//                 } else if (day === 7) {
+//                     console.log(result[7])
+//                 }
+//             }
+//         }
+//         return result
+//     }
+// }
+//
+// getNameOfDay('en', 3)
+
+
+
+
+
+// Task 4
+
+// function twoMin(arr) {
+//
+//             let min1,
+//                 min2,
+//                 result = [],
+//                 k = arr.length - 1,
+//                 filter = []
+//
+//
+//
+//     for(; k >= 0; k--){
+//         if(arr[k] in filter || arr[k] <= 0 || (arr[k]^0) !== arr[k]){
+//             continue
+//         } else {
+//             result.push(arr[k])
+//             filter[arr[k]] = 1
+//
+//
+//             if (result[0] < result[1]) {
+//                 min1 = result[0];
+//                 min2 = result[1];
+//             } else {
+//                 min1 = result[1];
+//                 min2 = result[0];
+//             }
+//
+//
+//             for (let i = 2; i < result.length; i++) {
+//                 if (result[i] < min1) {
+//                     min2 = min1;
+//                     min1 = result[i];
+//                 } else {
+//                     if (result[i] < min2)
+//                         min2 = result[i];
+//                 }
+//             }
+//         }
+//
+//     }
+//
+//
+//     return min1 + min2
+// }
+//
+//
+// console.log(( "Сумма двух минимальных чисел массива: " + (twoMin([10.2, 898, 899, 900, 11, 0, -11, 1.1]))))
+
+
+
+// Task 5
+
+// let array = [1, 1, 1, 1, 1]
+//
+// let sum = 0
+// for (let i = 0; i < array.length; i++){
+//     sum += (array[i] * (2 ** (array.length - i - 1)))
+// }
+// console.log(`Testing: [${array}] ==> ${sum}`)
+//
+
+
+
+</script>
+</body>
+</html>
