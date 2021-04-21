@@ -18,7 +18,13 @@ class Student {
 
     sortStudentsByRating() {
         Student.listOfStudents.sort((a,b) => (b.ratingPoint - a.ratingPoint) || (b.schoolPoint - a.schoolPoint))
-        for(let k = 0; k < Student.listOfStudents.length; k++){(k < 5) ?  Student.listOfStudents[k].isSelfPayment = false : Student.listOfStudents[k].isSelfPayment = true}
+        for(let k = 0; k < Student.listOfStudents.length; k++) {
+           if (k < 5 && Student.listOfStudents[k].ratingPoint >= 800) {
+               Student.listOfStudents[k].isSelfPayment = false
+           } else {
+               Student.listOfStudents[k].isSelfPayment = true
+           }
+        }
     }
 
 }
