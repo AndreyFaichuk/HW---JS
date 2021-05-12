@@ -172,7 +172,7 @@ const getMiddleSalary = (arr) => {
     console.log('The middle of salary is: ' + getMiddleSalary(emplyeeConstructArr))
 
 
-// Task 6
+     // Task 6
 
 const getRandomEmployee = (arr) => {
     let newArr = []
@@ -190,7 +190,7 @@ console.log(getRandomEmployee(emplyeeConstructArr))
 
 
 
-// Task 7
+     // Task 7
 
 const employeeObj2 = new Emploee1(emplyeeArr[0])
 
